@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ding from './assets/audio/Ding.mp3'
+import words from './assets/words.json'
 import './App.css'
 
 function App() {
