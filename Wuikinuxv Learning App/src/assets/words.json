@@ -3,6 +3,36 @@
         {
             "word": "yaù",
             "meaning": "Hello",
+            "file": "/audio/hello_emma.wav"
+        },
+        {
+            "word": "wə̀li ’six̌a",
+            "meaning": "Goodbye",
+            "file": "/audio/goodbye-welixsixa_uwi.mp3"
+        },
+        {
+            "word": "yaù",
+            "meaning": "Hello",
+            "file": ""
+        },
+        {
+            "word": "yaù",
+            "meaning": "Hello",
+            "file": ".assets/audio/hello_emma.wav"
+        },
+        {
+            "word": "yaù",
+            "meaning": "Hello",
+            "file": ".assets/audio/hello_emma.wav"
+        },
+        {
+            "word": "yaù",
+            "meaning": "Hello",
+            "file": ".assets/audio/hello_emma.wav"
+        },
+        {
+            "word": "yaù",
+            "meaning": "Hello",
             "file": ".assets/audio/hello_emma.wav"
         }
     ]

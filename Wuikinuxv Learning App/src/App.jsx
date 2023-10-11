@@ -1,10 +1,8 @@
-import { useState } from 'react'
-import ding from './assets/audio/Ding.mp3'
-import words from './assets/words.json'
+import wordlist from './assets/words.json'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const words = wordlist.words
 
   return (
     <>
@@ -20,14 +18,16 @@ function App() {
         <p>If the symbol &nbsp; ̌  appears on top of a letter it&apos;s called a back sign and indicates that the sound is pronounced further back in throat.</p>
         <p>If the letter v appears behind a letter, it indicates that you pronounce the previous symbol with a rounded mouth so for example, gv would sound like a g, but with a rounded mouth. <br/>If the stress sign appears over a vowel, as in &quot;à&quot; it means it&apos;s given more emphasis over other vowels, it&apos;s usually the first vowel of a word.</p>
       </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-        <audio src={ding} controls></audio>
+      <div className="areaforwords">
+        {words.map((word, index) => (
+          <div key={index}>
+            <h3>Word: {word.word}</h3>
+            <p>Meaning: {word.meaning}</p>
+            <audio controls>
+              <source src={word.file} type="audio/mpeg" />
+            </audio>
+          </div>
+        ))};
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
