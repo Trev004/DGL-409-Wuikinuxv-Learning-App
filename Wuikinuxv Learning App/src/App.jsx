@@ -12,6 +12,10 @@ function App() {
           <h1>Wuikinuxv Language App</h1>
         </nav>
       </header>
+      <div style={{ marginTop: '3em' }}>
+        <h2>Basics</h2>
+        <p>First things first, you&apos;ll want to be familiar with some symbols that may appear on or around words, you may have an easier time if you listen carefully to the word audio</p>
+      </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
