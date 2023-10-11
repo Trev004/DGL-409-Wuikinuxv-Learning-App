@@ -27,7 +27,7 @@ function App() {
               <source src={word.file} type="audio/mpeg" />
             </audio>
           </div>
-        ))};
+        ))}
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

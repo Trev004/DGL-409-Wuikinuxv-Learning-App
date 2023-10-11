@@ -11,29 +11,29 @@
             "file": "/audio/goodbye-welixsixa_uwi.mp3"
         },
         {
-            "word": "yaù",
-            "meaning": "Hello",
-            "file": ""
+            "word": "ǧiànakaci",
+            "meaning": "Thank you",
+            "file": "/audio/WB_thankyou_2007.mp3"
         },
         {
-            "word": "yaù",
-            "meaning": "Hello",
-            "file": ".assets/audio/hello_emma.wav"
+            "word": "haə̀msa",
+            "meaning": "To Eat",
+            "file": "/audio/emma_toeat.mp3"
         },
         {
-            "word": "yaù",
-            "meaning": "Hello",
-            "file": ".assets/audio/hello_emma.wav"
+            "word": "nàq̓a",
+            "meaning": "To Drink",
+            "file": "/audio/todrink-naqa.mp3"
         },
         {
-            "word": "yaù",
-            "meaning": "Hello",
-            "file": ".assets/audio/hello_emma.wav"
+            "word": "m̓ə̀lxvəla",
+            "meaning": "To Smile",
+            "file": "/audio/grin-melxvela_uwi.mp3"
         },
         {
-            "word": "yaù",
-            "meaning": "Hello",
-            "file": ".assets/audio/hello_emma.wav"
+            "word": "sas ’ǎìxst̓akva’a",
+            "meaning": "How are you",
+            "file": "/audio/howareyou-sasaixstakvaa_uwi.mp3"
         }
     ]
 }
