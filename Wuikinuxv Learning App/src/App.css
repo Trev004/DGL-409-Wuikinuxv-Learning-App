@@ -40,6 +40,15 @@
 .read-the-docs {
   color: #888;
 }
-nav{
-  
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #950000; 
+}
+header nav h1{
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 5%;
 }
