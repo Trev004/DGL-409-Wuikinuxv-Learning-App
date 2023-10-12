@@ -62,7 +62,13 @@ header nav h1{
 .word {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: 7em;
+  gap: 2em;
+  grid-auto-rows: 4em;
   text-align: left;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  border-bottom: 0.15em dashed #95000050;
+}
+.word *{
+  height: 50px;
 }
