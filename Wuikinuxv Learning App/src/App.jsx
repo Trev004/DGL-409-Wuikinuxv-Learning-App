@@ -18,14 +18,14 @@ function App() {
         <p>If the symbol &nbsp; ̌  appears on top of a letter it&apos;s called a back sign and indicates that the sound is pronounced further back in throat.</p>
         <p>If the letter v appears behind a letter, it indicates that you pronounce the previous symbol with a rounded mouth so for example, gv would sound like a g, but with a rounded mouth. <br/>If the stress sign appears over a vowel, as in &quot;à&quot; it means it&apos;s given more emphasis over other vowels, it&apos;s usually the first vowel of a word.</p>
       </div>
-      <div className="areaforwords">
+      <div className="wordarea">
         {words.map((word, index) => (
-          <div key={index}>
-            <h3>Word: {word.word}</h3>
-            <p>Meaning: {word.meaning}</p>
+          <div key={index} className='word'>
             <audio controls>
               <source src={word.file} type="audio/mpeg" />
             </audio>
+            <h3>Word: {word.word}</h3>
+            <p>Meaning: {word.meaning}</p>
           </div>
         ))}
       </div>

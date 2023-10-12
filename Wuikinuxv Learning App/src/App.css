@@ -52,3 +52,15 @@ header nav h1{
   text-align: left;
   margin-left: 5%;
 }
+.wordarea{
+  margin-top: 2em;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.word {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: 7em;
+}
