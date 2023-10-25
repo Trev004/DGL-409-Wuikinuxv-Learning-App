@@ -1,17 +1,13 @@
 import wordlist from './assets/words.json'
 import './App.css'
+import Header from './assets/Components/Header.jsx'
 
 function App() {
   const words = wordlist.words
 
   return (
     <>
-      <header>
-        <nav>
-          <img src="Thumbnail_Uikala_LOGO.png" alt="Wuikinuxv nation logo" />
-          <h1>Wuikinuxv Language App</h1>
-        </nav>
-      </header>
+      <Header />
       <div style={{ marginTop: '3em' }}>
         <h2>Basics</h2>
         <p>First things first, you&apos;ll want to be familiar with some symbols that may appear on or around words, you may have an easier time if you listen carefully to the word audio</p>
