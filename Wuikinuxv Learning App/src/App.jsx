@@ -12,7 +12,7 @@ function App() {
     setIsListView(!isListView)
   }
 
-  const currentContainerView =  `${isListView ? 'wordarea-list' : 'wordarea-card'}`;
+  const currentContainerView =  `${isListView ? 'wordarea-list' : 'wordarea-cards'}`;
   const currentWordView = `${isListView ? 'word-list' : 'word-card'}`;
 
   const buttonHandler = () => {

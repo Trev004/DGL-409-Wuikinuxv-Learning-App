@@ -20,17 +20,6 @@
   margin-top: 0.5em;
   border-bottom: 0.15em dashed #95000050;
 }
-.wordarea-card{
-  margin-top: 2em;
-  display: flex;
-  flex-wrap: wrap;
-}
-.word-card{
-  margin: 0.2em;
-  padding: 0.2em;
-  border: 0.2em solid #E0E0E0;
-  border-radius: 0.5em;
-}
 .intro{
   display: flex;
   align-items: center;
@@ -41,10 +30,4 @@
 }
 .intro img{
   padding-right: 2em;
-}
-
-@media (prefers-color-scheme: light) {
-  .word-card{
-    border: 0.2em solid #333333;
-  }
 }
