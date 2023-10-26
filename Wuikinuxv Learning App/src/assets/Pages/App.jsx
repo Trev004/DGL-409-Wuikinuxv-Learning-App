@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import wordlist from './assets/words.json'
+import wordlist from '../words.json'
 import './App.css'
-import Header from './assets/Components/Header.jsx'
+import Header from '../Components/Header.jsx'
 
 function App() {
   const words = wordlist.words
