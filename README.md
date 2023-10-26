@@ -10,3 +10,7 @@ For development, I'm using `npm run dev` <br> For showcasing, you can instead us
 ## MVP
 As of this stage, the app displays info on the language, just the basics, nothing too advanced as this meant to be beginner friendly and I didn't want to overload a new user (though even this *may* be too much). Audio, word, and meaning. <br>
 The list of words is added dynamically, meaning to add a new word all one would need to do is add the proper info to the [words.json](Wuikinuxv%20Learning%20App/src/assets/words.json) file and the app *should* automatically pull from there and add it to the list.
+
+## Revisions and Feature 1
+For learning React Router, I'm following [this](https://youtu.be/Ul3y1LXxzdU?si=CCPoIlVNXV_GGbJ8) tutorial by Web Dev Simplified. <br>
+I also tried following [this](https://reactrouter.com/en/main/start/tutorial) tutorial from React Router themselves but found it too confusing and not quite what I needed to do.
