@@ -9,8 +9,10 @@ function App() {
     <>
       <Header />
       <div style={{ marginTop: '3em' }}>
-        <img src="Thumbnail_Uikala_LOGO.png" alt="Wuikinuxv nation logo" style={{float: 'left'}}/>
-        <h2>Basics</h2>
+        <div className="intro">
+          <img src="Thumbnail_Uikala_LOGO.png" alt="Wuikinuxv nation logo"/>
+          <h2>Basics</h2>
+        </div>
         <p>First things first, you&apos;ll want to be familiar with some symbols that may appear on or around words, you may have an easier time if you listen carefully to the word audio</p>
         <p>The symbol a̓ or ’ appears on top of a letter or beside a letter. When it is on top of a letter it indicates a glottal catch or stoppage of breath as you pronounce the sound. If it appears beside a letter it indicates a short pause in the word.</p>
         <p>If the symbol &nbsp; ̌  appears on top of a letter it&apos;s called a back sign and indicates that the sound is pronounced further back in throat.</p>
