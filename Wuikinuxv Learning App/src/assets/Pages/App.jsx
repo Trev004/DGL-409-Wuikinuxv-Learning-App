@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import wordlist from '../words.json'
 import './App.css'
-import Header from '../Components/Header.jsx'
 
 function App() {
   const words = wordlist.words
@@ -29,7 +28,6 @@ function App() {
 
   return (
     <>
-      <Header />
       <div style={{ marginTop: '3em' }}>
         <div className="intro">
           <img src="Thumbnail_Uikala_LOGO.png" alt="Wuikinuxv nation logo"/>
