@@ -19,8 +19,46 @@ header nav img{
   width: 50px;
   height: 50px;
 }
+ul{
+  display: flex;
+  padding: 0 0 0 1em;
+  align-items: center;
+}
+li{
+  margin: 0 0 0 1em;
+  list-style-type: none;
+}
+li a{
+  padding: 0.5em 1em;
+  background-color: #333333;
+  color: #72E9E5;
+  border-radius: 1em;
+}
+li a:hover{
+  color: #72E9E5;
+  text-decoration: underline;
+  background-color: #4b4b4b;
+}
+li a.active{
+  border: #72E9E5;
+  border-width: 0.35em;
+  border-style: solid;
+}
 @media (prefers-color-scheme: light) {
     header{
-        color: #E0E0E0;
+        color: #e0e0e0;
+    }
+    li a{
+      background-color: white;
+      color: #213547;
+    }
+    li a:hover{
+      color: #1D3040;
+      background-color: #D1E5FF;
+    }
+    li a.active{
+      border: #1D3040;
+      border-width: 0.35em;
+      border-style: solid;
     }
 }
