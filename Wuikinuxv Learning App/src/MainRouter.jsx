@@ -1,8 +1,8 @@
-import App from '../Pages/App'
-import Flashcard from '../Pages/Flashcard'
-import './Header.css'
+import App from './assets/Pages/App'
+import Flashcard from './assets/Pages/Flashcard'
+import './MainRouter.css'
 import { Link, Outlet, Route, Routes } from 'react-router-dom'
-function Header() {
+function MainRouter() {
     return (
     <>
       <header>
@@ -25,4 +25,4 @@ function Header() {
     )
 }
 
-export default Header
+export default MainRouter
