@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import wordlist from '../words.json'
 import './App.css'
 
@@ -14,18 +14,6 @@ function App() {
   const currentContainerView =  `${isListView ? 'wordarea-list' : 'wordarea-card'}`;
   const currentWordView = `${isListView ? 'word-list' : 'word-card'}`;
 
-  const buttonHandler = () => {
-    viewChanger();
-  }
-  // Modified from code created with the help of ChatGPT
-  useEffect(() => {
-    const button = document.getElementById('viewToggler');
-    button.addEventListener('click', buttonHandler);
-    return () => {
-      button.removeEventListener('click', buttonHandler);
-    };
-  },);
-
   return (
     <>
       <div style={{ marginTop: '3em' }}>
@@ -38,7 +26,7 @@ function App() {
         <p>If the symbol &nbsp; ̌  appears on top of a letter it&apos;s called a back sign and indicates that the sound is pronounced further back in throat.</p>
         <p>If the letter v appears behind a letter, it indicates that you pronounce the previous symbol with a rounded mouth so for example, gv would sound like a g, but with a rounded mouth. <br/>If the stress sign appears over a vowel, as in &quot;à&quot; it means it&apos;s given more emphasis over other vowels, it&apos;s usually the first vowel of a word.</p>
       </div>
-      <button id='viewToggler'>{isListView ? 'Toggle to Card View' : 'Toggle to List View'}</button>
+      <button onClick={viewChanger}>{isListView ? 'Toggle to Card View' : 'Toggle to List View'}</button>
       <div className={currentContainerView}>
         {words.map((word, index) => (
           <div key={index} className={currentWordView}>
