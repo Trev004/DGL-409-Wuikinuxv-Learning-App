@@ -11,9 +11,9 @@ function Flashcard () {
         let newRandom;
         do {
             newRandom = Math.floor(Math.random() * words.length);
-        } while (newRandom == oldRandom);
+        } while (newRandom === oldRandom);
         setRandomNumber(newRandom);
-        setOldRandom(randomNumber);
+        setOldRandom(newRandom);
     }
     return(
         <>
