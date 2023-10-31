@@ -17,7 +17,7 @@ function Flashcard () {
     }
     return(
         <>
-            <h2>Flashcards</h2>
+            <h2 className='flashcard-intro'>Flashcards</h2>
             <p>Click on the correct meaning of the word displayed</p>
             <button onClick={newRandomNumber}>New Random</button>
             <p>Word: {words[randomNumber].word} Meaning: {words[randomNumber].meaning}</p>
