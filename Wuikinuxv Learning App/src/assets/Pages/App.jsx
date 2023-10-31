@@ -4,7 +4,6 @@ import './App.css'
 
 function App() {
   const words = wordlist.words
-
   const [isListView, setIsListView] = useState(true)
 
   const viewChanger = () => {
