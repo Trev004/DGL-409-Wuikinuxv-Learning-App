@@ -3,24 +3,24 @@ import { useState } from 'react';
 import './Flashcard.css'
 function Flashcard () {
     const words = wordlist.words
-    const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * words.length));
+    const [randomWord, setRandomWord] = useState(0);
     const [oldRandom, setOldRandom] = useState();
     const [wrongWords, setWrongWords] = useState([]);
-    const [userAnswer, setUserAnswer] = useState(null)
+    const [userCorrect, setUserCorrect] = useState(null)
     const [userSelections, setUserSelections] = useState({});
 
     // Generates new randoms, repeats the loop if previous number is generated
-    const newRandomNumber = () =>{
+    const newRandomWord = () =>{
         let newRandom;
-        setUserAnswer(null);
+        setUserCorrect(null);
         setUserSelections({});
         do {
             newRandom = Math.floor(Math.random() * words.length);
         } while (newRandom === oldRandom);
-        setRandomNumber(newRandom);
+        setRandomWord(newRandom);
         setOldRandom(newRandom);
 
-        // Generate 3 random indices for incorrect meanings
+        // Generate 3 random indices for incorrect meanings (Generates the 3 other flashcard choices)
         // GPT-Assisted
         const incorrectIndices = [];
         while (incorrectIndices.length < 3) {
@@ -32,7 +32,8 @@ function Flashcard () {
 
         const correctWord = words[newRandom].meaning;
         const incorrectWords = incorrectIndices.map(index => words[index].meaning);
-
+        
+        // adds the correct word and incorrect words together, then shuffles so the location on the page is randomized 
         const allWords = [correctWord, ...incorrectWords];
         shuffleWords(allWords);
         setWrongWords(allWords);
@@ -44,8 +45,8 @@ function Flashcard () {
     }
 
     const answerHandler = (meaning, index) => {
-        const isCorrect = meaning === words[randomNumber].meaning;
-        if(isCorrect){setUserAnswer(true);}else{setUserAnswer(false);}
+        const isCorrect = meaning === words[randomWord].meaning;
+        if(isCorrect){setUserCorrect(true);}else{setUserCorrect(false);}
         setUserSelections((prevSelections) => ({
           ...prevSelections,
           [index]: isCorrect ? 'flashcard-correct' : 'flashcard-incorrect',
@@ -55,8 +56,8 @@ function Flashcard () {
         <>
             <h2 className='flashcard-intro'>Flashcards</h2>
             <p>Click on the correct meaning of the word displayed</p>
-            <button onClick={newRandomNumber}>New Random</button>
-            <p>Word: {words[randomNumber].word}</p>
+            <button onClick={newRandomWord}>New Random</button>
+            <p>Word: {words[randomWord].word}</p>
             <div className="flashcard-meanings">
                 {wrongWords.map((meaning, index) => (
                     <button
@@ -66,8 +67,8 @@ function Flashcard () {
                         >{meaning}</button>
                 ))}
             </div>
-            {userAnswer === true && <p>Correct!</p>}
-            {userAnswer === false && <p>Incorrect. Try again.</p>}
+            {userCorrect === true && <p>Correct!</p>}
+            {userCorrect === false && <p>Incorrect. Try again.</p>}
         </>
     );
 }
