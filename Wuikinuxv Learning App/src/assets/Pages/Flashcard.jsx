@@ -1,5 +1,5 @@
 import wordlist from '../words.json'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Flashcard.css'
 function Flashcard () {
     const words = wordlist.words
@@ -8,6 +8,10 @@ function Flashcard () {
     const [wrongWords, setWrongWords] = useState([]);
     const [userCorrect, setUserCorrect] = useState(null)
     const [userSelections, setUserSelections] = useState({});
+
+    useEffect(() => {
+        newRandomWord();
+    }, []);
 
     // Generates new randoms, repeats the loop if previous number is generated
     const newRandomWord = () =>{
