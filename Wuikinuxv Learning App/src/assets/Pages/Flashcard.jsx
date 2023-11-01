@@ -11,6 +11,7 @@ function Flashcard () {
     // Generates new randoms, repeats the loop if previous number is generated
     const newRandomNumber = () =>{
         let newRandom;
+        setUserAnswer(null);
         do {
             newRandom = Math.floor(Math.random() * words.length);
         } while (newRandom === oldRandom);
