@@ -5,8 +5,8 @@
     margin: 0 2em;
 }
 .flashcard-correct{
-    background-color: pink;
+    background-color: rgb(33, 65, 40);
 }
 .flashcard-incorrect{
-    background-color: aqua;
+    background-color: rgb(238, 82, 82);
 }
