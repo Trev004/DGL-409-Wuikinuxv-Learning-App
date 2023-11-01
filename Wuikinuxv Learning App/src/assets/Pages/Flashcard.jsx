@@ -46,7 +46,12 @@ function Flashcard () {
 
     const answerHandler = (meaning, index) => {
         const isCorrect = meaning === words[randomWord].meaning;
-        if(isCorrect){setUserCorrect(true);}else{setUserCorrect(false);}
+        if(isCorrect){
+            setUserCorrect(true);
+            setTimeout(() => {
+                newRandomWord();
+            }, 2000);
+        }else{setUserCorrect(false);}
         setUserSelections((prevSelections) => ({
           ...prevSelections,
           [index]: isCorrect ? 'flashcard-correct' : 'flashcard-incorrect',
