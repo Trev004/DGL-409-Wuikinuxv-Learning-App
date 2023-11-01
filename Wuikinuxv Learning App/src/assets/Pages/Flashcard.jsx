@@ -7,11 +7,13 @@ function Flashcard () {
     const [oldRandom, setOldRandom] = useState();
     const [wrongWords, setWrongWords] = useState([]);
     const [userAnswer, setUserAnswer] = useState(null)
+    const [userSelections, setUserSelections] = useState({});
 
     // Generates new randoms, repeats the loop if previous number is generated
     const newRandomNumber = () =>{
         let newRandom;
         setUserAnswer(null);
+        setUserSelections({});
         do {
             newRandom = Math.floor(Math.random() * words.length);
         } while (newRandom === oldRandom);
@@ -41,13 +43,14 @@ function Flashcard () {
         return arr.sort(() => Math.random() - 0.5);
     }
 
-    const answerHandler = (meaning) => {
-        if (meaning === words[randomNumber].meaning) {
-            setUserAnswer(true);
-        } else {
-            setUserAnswer(false);
-        }
-    }
+    const answerHandler = (meaning, index) => {
+        const isCorrect = meaning === words[randomNumber].meaning;
+        if(isCorrect){setUserAnswer(true);}else{setUserAnswer(false);}
+        setUserSelections((prevSelections) => ({
+          ...prevSelections,
+          [index]: isCorrect ? 'flashcard-correct' : 'flashcard-incorrect',
+        }));
+      }
     return(
         <>
             <h2 className='flashcard-intro'>Flashcards</h2>
@@ -58,8 +61,8 @@ function Flashcard () {
                 {wrongWords.map((meaning, index) => (
                     <button
                         key={index}
-                        onClick={() => answerHandler(meaning)}
-                        className={userAnswer !== null ? (meaning === words[randomNumber].meaning ? 'flashcard-correct' : 'flashcard-incorrect') : ''}
+                        onClick={() => answerHandler(meaning, index)}
+                        className={`flashcard-response ${userSelections[index] || ''}`}
                         >{meaning}</button>
                 ))}
             </div>

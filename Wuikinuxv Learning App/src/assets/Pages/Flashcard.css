@@ -9,4 +9,5 @@
 }
 .flashcard-incorrect{
     background-color: rgb(238, 82, 82);
+    pointer-events: none;
 }
