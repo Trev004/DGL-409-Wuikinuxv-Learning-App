@@ -4,3 +4,9 @@
 .flashcard-response{
     margin: 0 2em;
 }
+.flashcard-correct{
+    background-color: pink;
+}
+.flashcard-incorrect{
+    background-color: aqua;
+}

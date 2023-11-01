@@ -56,7 +56,9 @@ function Flashcard () {
             <p>Word: {words[randomNumber].word}</p>
             <div className="flashcard-meanings">
                 {wrongWords.map((meaning, index) => (
-                    <button key={index} onClick={() => answerHandler(meaning)} className='flashcard-response'>{meaning}</button>
+                    <button
+                        key={index} onClick={() => answerHandler(meaning)} className={userAnswer !== null ? (meaning === words[randomNumber].meaning ? 'flashcard-correct' : 'flashcard-incorrect') : ''}
+                        >{meaning}</button>
                 ))}
             </div>
             {userAnswer === true && <p>Correct!</p>}
