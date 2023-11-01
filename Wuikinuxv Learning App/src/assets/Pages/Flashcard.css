@@ -11,3 +11,6 @@
     background-color: rgb(238, 82, 82);
     pointer-events: none;
 }
+.flashcard-unclickable{
+    pointer-events: none;
+}

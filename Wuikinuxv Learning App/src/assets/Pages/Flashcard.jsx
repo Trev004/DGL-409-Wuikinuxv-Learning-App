@@ -11,6 +11,7 @@ function Flashcard () {
 
     useEffect(() => {
         newRandomWord();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Generates new randoms, repeats the loop if previous number is generated
@@ -72,7 +73,7 @@ function Flashcard () {
                     <button
                         key={index}
                         onClick={() => answerHandler(meaning, index)}
-                        className={`flashcard-response ${userSelections[index] || ''}`}
+                        className={`flashcard-response ${userSelections[index] || ''} ${userCorrect ? 'flashcard-unclickable': ''}`}
                         >{meaning}</button>
                 ))}
             </div>
