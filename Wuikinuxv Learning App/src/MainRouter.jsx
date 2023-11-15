@@ -9,7 +9,7 @@ function MainRouter() {
           <nav>
             <h1>Wuikinuxv Language App</h1>
             <ul>
-              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink to="/">Wordlist</NavLink></li>
               <li><NavLink to={"/flashcards"}>Flashcards</NavLink></li>
             </ul>
           </nav>
