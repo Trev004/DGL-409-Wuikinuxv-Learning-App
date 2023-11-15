@@ -7,6 +7,7 @@ header{
 }
 header nav{
   display: flex;
+  justify-content: space-between;
 }
 header nav h1{
   font-size: 1.5em;
@@ -23,6 +24,7 @@ ul{
   display: flex;
   padding: 0 0 0 1em;
   align-items: center;
+  margin-right: 2em;
 }
 li{
   margin: 0 0 0 1em;
