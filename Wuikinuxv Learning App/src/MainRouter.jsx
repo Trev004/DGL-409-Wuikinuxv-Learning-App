@@ -1,5 +1,6 @@
 import App from './assets/Pages/App'
 import Flashcard from './assets/Pages/Flashcard'
+import Basics from './assets/Pages/Basics'
 import './MainRouter.css'
 import { NavLink, Outlet, Route, Routes } from 'react-router-dom'
 function MainRouter() {
@@ -9,7 +10,8 @@ function MainRouter() {
           <nav>
             <h1>Wuikinuxv Language App</h1>
             <ul>
-              <li><NavLink to="/">Wordlist</NavLink></li>
+              <li><NavLink to="/">Basics</NavLink></li>
+              <li><NavLink to="/wordlist">Wordlist</NavLink></li>
               <li><NavLink to={"/flashcards"}>Flashcards</NavLink></li>
             </ul>
           </nav>
@@ -18,7 +20,8 @@ function MainRouter() {
         <Outlet />
       </div>
       <Routes>
-        <Route path='/' element={ <App /> }/>
+        <Route path='/' element={<Basics />}/>
+        <Route path='/wordlist' element={ <App /> }/>
         <Route path='/flashcards' element={ <Flashcard /> }/>
       </Routes>
     </>
