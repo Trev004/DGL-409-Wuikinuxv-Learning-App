@@ -14,3 +14,6 @@ The list of words is added dynamically, meaning to add a new word all one would 
 ## Revisions and Feature 1
 For learning React Router, I'm following [this](https://youtu.be/Ul3y1LXxzdU?si=CCPoIlVNXV_GGbJ8) tutorial by Web Dev Simplified. <br>
 I also tried following [this](https://reactrouter.com/en/main/start/tutorial) tutorial from React Router themselves but found it too confusing and not quite what I needed to do.
+
+## Revisions and Feature 2
+For storing things in localstorage, I was following [this](https://dev.to/lrth06/storing-user-preferences-in-react-2g4i) tutorial from DEV, along with some needed edits that were assisted by ChatGPT

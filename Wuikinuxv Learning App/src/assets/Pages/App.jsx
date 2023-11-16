@@ -1,15 +1,23 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import wordlist from '../words.json'
 import './App.css'
 
 function App() {
-  const words = wordlist.words
-  const [isListView, setIsListView] = useState(true)
-
+  const words = wordlist.words;
+  const userListPref = localStorage.getItem('prefersListView');//checks for the localStorage preference
+  const [isListView, setIsListView] = useState(userListPref === 'true' || userListPref === null);  
   const viewChanger = () => {
-    setIsListView(!isListView)
+    setIsListView(!isListView);
   }
-
+  //updates the localStorage preference
+  useEffect(() => {
+    if (isListView){
+      localStorage.setItem('prefersListView', 'true');
+    }else{
+      localStorage.setItem('prefersListView', 'false');
+    }
+  }, [isListView]);
+  
   const currentContainerView =  `${isListView ? 'wordarea-list' : 'wordarea-card'}`;
   const currentWordView = `${isListView ? 'word-list' : 'word-card'}`;
 
