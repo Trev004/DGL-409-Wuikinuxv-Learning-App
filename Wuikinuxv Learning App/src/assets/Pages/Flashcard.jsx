@@ -1,5 +1,5 @@
 import wordlist from '../words.json'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Flashcard.css'
 function Flashcard () {
     const words = wordlist.words
@@ -8,11 +8,20 @@ function Flashcard () {
     const [wrongWords, setWrongWords] = useState([]);
     const [userCorrect, setUserCorrect] = useState(null)
     const [userSelections, setUserSelections] = useState({});
+    const [audioSrc, setAudioSrc] = useState('');
+    const audioSrcRef = useRef(null)
 
     useEffect(() => {
         newRandomWord();
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
+    useEffect(() => {
+        // Manually update the audio element when the audio source changes
+        if (audioSrcRef.current) {
+            audioSrcRef.current.load();
+        }
+    }, [audioSrc]);//GPT-Assisted
 
     // Generates new randoms, repeats the loop if previous number is generated
     const newRandomWord = () =>{
@@ -24,6 +33,7 @@ function Flashcard () {
         } while (newRandom === oldRandom);
         setRandomWord(newRandom);
         setOldRandom(newRandom);
+        setAudioSrc(words[newRandom].file);
 
         // Generate 3 random indices for incorrect meanings (Generates the 3 other flashcard choices)
         // GPT-Assisted
@@ -68,6 +78,9 @@ function Flashcard () {
             <p>Click on the correct meaning of the word displayed</p>
             <button onClick={newRandomWord}>New Random</button>
             <h2>Word: {words[randomWord].word}</h2>
+            <audio ref={audioSrcRef} controls>
+              <source src={audioSrc} type="audio/mpeg" />
+            </audio>
             <div className="flashcard-meanings">
                 {wrongWords.map((meaning, index) => (
                     <button
