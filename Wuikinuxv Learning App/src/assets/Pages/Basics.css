@@ -1,0 +1,18 @@
+#basics{
+    text-align: left;
+}
+.basics-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4em;
+}
+.basics-intro img{
+    padding-right: 3em;
+}
+.word-section h3{
+    font-weight: 300;
+}
+.unique{
+    padding-left: 0.5em;
+}

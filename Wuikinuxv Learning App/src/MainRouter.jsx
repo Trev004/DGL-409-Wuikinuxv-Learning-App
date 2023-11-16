@@ -11,7 +11,7 @@ function MainRouter() {
             <h1>Wuikinuxv Language App</h1>
             <ul>
               <li><NavLink to="/">Basics</NavLink></li>
-              <li><NavLink to="/wordlist">Wordlist</NavLink></li>
+              <li><NavLink to="/wordlist">Word List</NavLink></li>
               <li><NavLink to={"/flashcards"}>Flashcards</NavLink></li>
             </ul>
           </nav>

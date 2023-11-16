@@ -18,12 +18,9 @@ function App() {
       <div style={{ marginTop: '3em' }}>
         <div className="intro">
           <img src="Thumbnail_Uikala_LOGO.png" alt="Wuikinuxv nation logo"/>
-          <h2>Basics</h2>
+          <h2>Word List</h2>
         </div>
-        <p>First things first, you&apos;ll want to be familiar with some symbols that may appear on or around words, you may have an easier time if you listen carefully to the word audio</p>
-        <p>The symbol a̓ or ’ appears on top of a letter or beside a letter. When it is on top of a letter it indicates a glottal catch or stoppage of breath as you pronounce the sound. If it appears beside a letter it indicates a short pause in the word.</p>
-        <p>If the symbol &nbsp; ̌  appears on top of a letter it&apos;s called a back sign and indicates that the sound is pronounced further back in throat.</p>
-        <p>If the letter v appears behind a letter, it indicates that you pronounce the previous symbol with a rounded mouth so for example, gv would sound like a g, but with a rounded mouth. <br/>If the stress sign appears over a vowel, as in &quot;à&quot; it means it&apos;s given more emphasis over other vowels, it&apos;s usually the first vowel of a word.</p>
+        <p>Below, you can see a list of ’Uik̓ala words, paired with their english translations and an audio file for you to listen to.</p>
       </div>
       <button onClick={viewChanger}>{isListView ? 'Toggle to Card View' : 'Toggle to List View'}</button>
       <div className={currentContainerView}>
