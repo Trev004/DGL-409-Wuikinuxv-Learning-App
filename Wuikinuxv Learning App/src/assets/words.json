@@ -35,5 +35,17 @@
             "meaning": "How are you",
             "file": "/audio/howareyou.mp3"
         }
+    ],
+    "sounds": [
+        {
+            "sound": "a or à",
+            "tip": "similar to english, à is given more emphasis",
+            "file": "/audio/sounds/HS_a_1994-new.mp3"
+        },
+        {
+            "sound": "a̓",
+            "tip": "similar to english, but shorter than the other 'a' sounds",
+            "file": "/audio/sounds/HS_astop_1994-new.mp3"
+        }
     ]
 }
