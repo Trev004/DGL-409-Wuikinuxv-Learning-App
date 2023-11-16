@@ -63,9 +63,6 @@ function Flashcard () {
         const isCorrect = meaning === words[randomWord].meaning;
         if(isCorrect){
             setUserCorrect(true);
-            setTimeout(() => {
-                newRandomWord();
-            }, 2000);
         }else{setUserCorrect(false);}
         setUserSelections((prevSelections) => ({
           ...prevSelections,
@@ -76,7 +73,6 @@ function Flashcard () {
         <>
             <h2 className='flashcard-intro'>Flashcards</h2>
             <p>Click on the correct meaning of the word displayed</p>
-            <button onClick={newRandomWord}>New Random</button>
             <h2>Word: {words[randomWord].word}</h2>
             <audio ref={audioSrcRef} controls>
               <source src={audioSrc} type="audio/mpeg" />
@@ -90,7 +86,10 @@ function Flashcard () {
                         >{meaning}</button>
                 ))}
             </div>
-            {userCorrect === true && <p>Correct!</p>}
+            {userCorrect === true && 
+            <><p>Correct!</p>
+            <button onClick={newRandomWord}>Continue</button></>
+            }
             {userCorrect === false && <p>Incorrect. Try again.</p>}
         </>
     );
