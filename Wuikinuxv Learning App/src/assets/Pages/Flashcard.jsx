@@ -67,7 +67,7 @@ function Flashcard () {
             <h2 className='flashcard-intro'>Flashcards</h2>
             <p>Click on the correct meaning of the word displayed</p>
             <button onClick={newRandomWord}>New Random</button>
-            <p>Word: {words[randomWord].word}</p>
+            <h2>Word: {words[randomWord].word}</h2>
             <div className="flashcard-meanings">
                 {wrongWords.map((meaning, index) => (
                     <button
