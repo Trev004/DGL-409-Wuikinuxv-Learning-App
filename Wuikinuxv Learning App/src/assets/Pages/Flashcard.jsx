@@ -1,5 +1,5 @@
 import wordlist from '../words.json'
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import './Flashcard.css'
 function Flashcard () {
     const words = wordlist.words
@@ -10,27 +10,13 @@ function Flashcard () {
     const [userSelections, setUserSelections] = useState({});
     const [audioSrc, setAudioSrc] = useState('');
     const audioSrcRef = useRef(null)
-
-    useEffect(() => {
-        newRandomWord();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    useEffect(() => {
-        // Manually update the audio element when the audio source changes
-        if (audioSrcRef.current) {
-            audioSrcRef.current.load();
-        }
-    }, [audioSrc]);//GPT-Assisted
-
-    // Generates new randoms, repeats the loop if previous number is generated
-    const newRandomWord = () =>{
+    const newRandomWord = useCallback((tempOldRandom) =>{
         let newRandom;
         setUserCorrect(null);
         setUserSelections({});
         do {
             newRandom = Math.floor(Math.random() * words.length);
-        } while (newRandom === oldRandom);
+        } while (newRandom === tempOldRandom);
         setRandomWord(newRandom);
         setOldRandom(newRandom);
         setAudioSrc(words[newRandom].file);
@@ -52,7 +38,20 @@ function Flashcard () {
         const allWords = [correctWord, ...incorrectWords];
         shuffleWords(allWords);
         setWrongWords(allWords);
-    }
+    }, [words])
+    useEffect(() => {
+        newRandomWord("");
+    }, [newRandomWord]);
+
+    useEffect(() => {
+        // Manually update the audio element when the audio source changes
+        if (audioSrcRef.current) {
+            audioSrcRef.current.load();
+        }
+    }, [audioSrc]);//GPT-Assisted
+
+    // Generates new randoms, repeats the loop if previous number is generated
+    
     // Array "shuffle" function from:
     // https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/
     const shuffleWords = (arr) =>{
@@ -88,7 +87,7 @@ function Flashcard () {
             </div>
             {userCorrect === true && 
             <><p>Correct!</p>
-            <button onClick={newRandomWord}>Continue</button></>
+            <button onClick={() => {newRandomWord(oldRandom)}}>Continue</button></>
             }
             {userCorrect === false && <p>Incorrect. Try again.</p>}
         </>
