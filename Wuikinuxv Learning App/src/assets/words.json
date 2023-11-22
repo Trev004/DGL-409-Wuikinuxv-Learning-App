@@ -3,7 +3,10 @@
         {
             "word": "yaù",
             "meaning": "Hello",
-            "file": "/audio/hello.mp3"
+            "file": "/audio/hello.mp3",
+            "sounds":{
+
+            }
         },
         {
             "word": "wə̀li ’six̌a",
@@ -40,17 +43,242 @@
         {
             "sound": "a or à",
             "tip": "similar to english, à is pronounced with more emphasis",
-            "file": "/audio/sounds/HS_a_1994-new.mp3"
+            "file": "/audio/sounds/a.mp3"
         },
         {
             "sound": "a̓",
             "tip": "similar to english, but shorter than the other 'a' sounds",
-            "file": "/audio/sounds/HS_astop_1994-new.mp3"
+            "file": "/audio/sounds/astop.mp3"
         },
         {
-            "sound": "b",
+            "sound": "b", 
             "tip": "same as english",
-            "file": "/audio/sounds/HS_b_1984-new.mp3"
+            "file": "/audio/sounds/b.mp3"
+        },
+        {
+            "sound": "c",
+            "tip": "similar to a `ch` sound in english",
+            "file": "/audio/sounds/c.mp3"
+        },
+        {
+            "sound": "c̓",
+            "tip": "similar to a `ch` sound in english, but with glottal catch",
+            "file": "/audio/sounds/cstop.mp3"
+        },
+        {
+            "sound": "d",
+            "tip": "same as english",
+            "file": "/audio/sounds/d.mp3"
+        },
+        {
+            "sound": "dh",
+            "tip": "similar to a `gl` sound in english",
+            "file": "/audio/sounds/dh.mp3"
+        },
+        {
+            "sound": "əl",
+            "tip": "similar to an `i` sound in english words (imerge, indoor, ill)",
+            "file": "/audio/sounds/el.mp3"
+        },
+        {
+            "sound": "əm",
+            "tip": "similar to an `i` sound in english words (imerge, indoor, ill)",
+            "file": "/audio/sounds/em.mp3"
+        },
+        {
+            "sound": "ən",
+            "tip": "similar to an `i` sound in english words (imerge, indoor, ill)",
+            "file": "/audio/sounds/en.mp3"
+        },
+        {
+            "sound": "ǧ",
+            "tip": "",
+            "file": "/audio/sounds/g_backsign.mp3"
+        },
+        {
+            "sound": "g",
+            "tip": "",
+            "file": "/audio/sounds/g.mp3"
+        },
+        {
+            "sound": "ǧv",
+            "tip": "",
+            "file": "/audio/sounds/gv_backsign.mp3"
+        },
+        {
+            "sound": "gv",
+            "tip": "",
+            "file": "/audio/sounds/gv.mp3"
+        },
+        {
+            "sound": "h",
+            "tip": "",
+            "file": "/audio/sounds/h.mp3"
+        },
+        {
+            "sound": "i",
+            "tip": "",
+            "file": "/audio/sounds/i.mp3"
+        },
+        {
+            "sound": "k",
+            "tip": "",
+            "file": "/audio/sounds/k.mp3"
+        },
+        {
+            "sound": "k̓",
+            "tip": "",
+            "file": "/audio/sounds/kstop.mp3"
+        },
+        {
+            "sound": "k̓v",
+            "tip": "",
+            "file": "/audio/sounds/kstopv.mp3"
+        },
+        {
+            "sound": "kv",
+            "tip": "",
+            "file": "/audio/sounds/kv.mp3"
+        },
+        {
+            "sound": "l",
+            "tip": "",
+            "file": "/audio/sounds/l.mp3"
+        },
+        {
+            "sound": "lh",
+            "tip": "",
+            "file": "/audio/sounds/lh.mp3"
+        },
+        {
+            "sound": "l̓",
+            "tip": "",
+            "file": "/audio/sounds/lstop.mp3"
+        },
+        {
+            "sound": "m",
+            "tip": "",
+            "file": "/audio/sounds/m.mp3"
+        },
+        {
+            "sound": "m̓",
+            "tip": "",
+            "file": "/audio/sounds/mstop.mp3"
+        },
+        {
+            "sound": "n",
+            "tip": "",
+            "file": "/audio/sounds/n.mp3"
+        },
+        {
+            "sound": "n̓",
+            "tip": "",
+            "file": "/audio/sounds/nstop.mp3"
+        },
+        {
+            "sound": "p",
+            "tip": "",
+            "file": "/audio/sounds/p.mp3"
+        },
+        {
+            "sound": "p̓",
+            "tip": "",
+            "file": "/audio/sounds/pstop.mp3"
+        },
+        {
+            "sound": "q",
+            "tip": "",
+            "file": "/audio/sounds/q.mp3"
+        },
+        {
+            "sound": "q̓",
+            "tip": "",
+            "file": "/audio/sounds/qstop.mp3"
+        },
+        {
+            "sound": "q̓v",
+            "tip": "",
+            "file": "/audio/sounds/qstopv.mp3"
+        },
+        {
+            "sound": "qv",
+            "tip": "",
+            "file": "/audio/sounds/qv.mp3"
+        },
+        {
+            "sound": "s",
+            "tip": "",
+            "file": "/audio/sounds/s.mp3"
+        },
+        {
+            "sound": "t",
+            "tip": "",
+            "file": "/audio/sounds/t.mp3"
+        },
+        {
+            "sound": "th",
+            "tip": "",
+            "file": "/audio/sounds/th.mp3"
+        },
+        {
+            "sound": "t̓",
+            "tip": "",
+            "file": "/audio/sounds/tstop.mp3"
+        },
+        {
+            "sound": "t̓h",
+            "tip": "",
+            "file": "/audio/sounds/tstoph.mp3"
+        },
+        {
+            "sound": "u",
+            "tip": "",
+            "file": "/audio/sounds/u.mp3"
+        },
+        {
+            "sound": "w",
+            "tip": "",
+            "file": "/audio/sounds/w.mp3"
+        },
+        {
+            "sound": "w̓",
+            "tip": "",
+            "file": "/audio/sounds/wstop.mp3"
+        },
+        {
+            "sound": "x̌",
+            "tip": "",
+            "file": "/audio/sounds/x_backsign.mp3"
+        },
+        {
+            "sound": "x",
+            "tip": "",
+            "file": "/audio/sounds/x.mp3"
+        },
+        {
+            "sound": "x̌v",
+            "tip": "",
+            "file": "/audio/sounds/xv_backsign.mp3"
+        },
+        {
+            "sound": "xv",
+            "tip": "",
+            "file": "/audio/sounds/xv.mp3"
+        },
+        {
+            "sound": "y",
+            "tip": "",
+            "file": "/audio/sounds/y.mp3"
+        },
+        {
+            "sound": "y̓",
+            "tip": "",
+            "file": "/audio/sounds/ystop.mp3"
+        },
+        {
+            "sound": "z",
+            "tip": "",
+            "file": "/audio/sounds/z.mp3"
         }
     ]
 }
