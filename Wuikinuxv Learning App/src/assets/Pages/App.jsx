@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Word from '../Components/Word'
 import wordlist from '../words.json'
 import './App.css'
 
@@ -40,6 +41,11 @@ function App() {
             <h3>Word: {word.word}</h3>
             <p>Meaning: {word.meaning}</p>
           </div>
+        ))}
+      </div>
+      <div className={currentContainerView}>
+      {words.map((word, index) => (
+          <Word key={index} word={word} isListView={isListView}/>
         ))}
       </div>
     </>
