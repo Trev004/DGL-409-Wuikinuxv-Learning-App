@@ -4,37 +4,43 @@
             "word": "yaù",
             "meaning": "Hello",
             "file": "/audio/hello.mp3",
-            "sounds":["y", "a", "ù"]
+            "sounds": ["y", "a", "ù"]
         },
         {
             "word": "wə̀li ’six̌a",
             "meaning": "Goodbye",
-            "file": "/audio/goodbye.mp3"
+            "file": "/audio/goodbye.mp3",
+            "sounds": ["w", "ə̀l", "i", " ", "’", "s", "i", "x̌", "a"]
         },
         {
             "word": "ǧiànakaci",
             "meaning": "Thank you",
-            "file": "/audio/thankyou.mp3"
+            "file": "/audio/thankyou.mp3",
+            "sounds": ["ǧ", "i", "à", "n", "a", "k", "a", "c", "i"]
         },
         {
             "word": "haə̀msa",
             "meaning": "To Eat",
-            "file": "/audio/toeat.mp3"
+            "file": "/audio/toeat.mp3",
+            "sounds": ["h", "a", "ə̀m", "s", "a"]
         },
         {
             "word": "nàq̓a",
             "meaning": "To Drink",
-            "file": "/audio/todrink.mp3"
+            "file": "/audio/todrink.mp3",
+            "sounds": ["n", "à", "q̓", "a"]
         },
         {
             "word": "m̓ə̀lxvəla",
             "meaning": "To Smile",
-            "file": "/audio/togrin.mp3"
+            "file": "/audio/togrin.mp3",
+            "sounds": ["m̓", "ə̀l", "xv", "əl", "a"]
         },
         {
             "word": "sas ’ǎìxst̓akva’a",
             "meaning": "How are you",
-            "file": "/audio/howareyou.mp3"
+            "file": "/audio/howareyou.mp3",
+            "sounds": ["s", "a", "s", " ", "’", "ǎ", "ì", "x", "s", "t̓", "a", "kv", "a", "’", "a"]
         }
     ],
     "sounds": [
@@ -282,6 +288,10 @@
             "sound": "z",
             "tip": "a mix between `ch` `j` and `z` sounds in english",
             "file": "/audio/sounds/z.mp3"
+        },
+        {
+            "sound": "’",
+            "tip": "glottal catch"
         }
     ]
 }
