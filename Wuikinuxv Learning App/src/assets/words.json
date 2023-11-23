@@ -245,6 +245,11 @@
             "file": "/audio/sounds/u.mp3"
         },
         {
+            "sound": "ù",
+            "tip": "similar to `oo` in english",
+            "file": "/audio/sounds/u.mp3"
+        },
+        {
             "sound": "w",
             "tip": "similar to `wa` in english",
             "file": "/audio/sounds/w.mp3"
