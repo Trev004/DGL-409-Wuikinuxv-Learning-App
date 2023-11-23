@@ -21,7 +21,7 @@ Word.propTypes = {
       meaning: PropTypes.string.isRequired,
       file: PropTypes.string.isRequired,
     }).isRequired,
-    isListView: PropTypes.string.isRequired,
+    isListView: PropTypes.bool.isRequired,
 };
 
 export default Word;
