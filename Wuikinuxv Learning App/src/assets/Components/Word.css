@@ -1,10 +1,12 @@
 /*  GPT-Assisted CSS
     with edits to match styling
 */
-.word-part {
+.word-part{
     position: relative;
 }
-
+.word-part:hover{
+    color: #72E9E5;
+}
 .word-part::before {
   content: attr(title);
   display: none;
@@ -21,7 +23,7 @@
   width: 25em;
 }
 
-.word-part:hover::before {
+.word-part:hover:not([title='']):before {
   display: block;
 }
 

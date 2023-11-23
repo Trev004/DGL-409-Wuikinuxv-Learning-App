@@ -51,12 +51,17 @@
         },
         {
             "sound": "à",
-            "tip": "similar to english, à is pronounced with more emphasis",
+            "tip": "similar to english `ah`, à is pronounced with more emphasis",
             "file": "/audio/sounds/a.mp3"
         },
         {
             "sound": "a̓",
             "tip": "similar to english, but shorter than the other 'a' sounds",
+            "file": "/audio/sounds/astop.mp3"
+        },
+        {
+            "sound": "ǎ",
+            "tip": "similar to english, but pronounced further back in the throat than the other 'a' sounds",
             "file": "/audio/sounds/astop.mp3"
         },
         {
@@ -127,6 +132,11 @@
         {
             "sound": "i",
             "tip": "similar to an `ee` sound in english",
+            "file": "/audio/sounds/i.mp3"
+        },
+        {
+            "sound": "ì",
+            "tip": "similar to an `ee` sound in english, but with more emphasis",
             "file": "/audio/sounds/i.mp3"
         },
         {
