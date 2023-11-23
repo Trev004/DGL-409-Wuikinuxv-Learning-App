@@ -4,9 +4,7 @@
             "word": "yaù",
             "meaning": "Hello",
             "file": "/audio/hello.mp3",
-            "sounds":{
-
-            }
+            "sounds":["y", "a", "ù"]
         },
         {
             "word": "wə̀li ’six̌a",
@@ -41,7 +39,12 @@
     ],
     "sounds": [
         {
-            "sound": "a or à",
+            "sound": "a",
+            "tip": "similar to english `ah`",
+            "file": "/audio/sounds/a.mp3"
+        },
+        {
+            "sound": "à",
             "tip": "similar to english, à is pronounced with more emphasis",
             "file": "/audio/sounds/a.mp3"
         },
@@ -52,7 +55,7 @@
         },
         {
             "sound": "b", 
-            "tip": "same as english",
+            "tip": "similar to english",
             "file": "/audio/sounds/b.mp3"
         },
         {
@@ -67,7 +70,7 @@
         },
         {
             "sound": "d",
-            "tip": "same as english",
+            "tip": "similar to english",
             "file": "/audio/sounds/d.mp3"
         },
         {
@@ -77,207 +80,207 @@
         },
         {
             "sound": "əl",
-            "tip": "similar to an `i` sound in english words (imerge, indoor, ill)",
+            "tip": "similar to an `i` sound in english words (immerge, indoor, ill)",
             "file": "/audio/sounds/el.mp3"
         },
         {
             "sound": "əm",
-            "tip": "similar to an `i` sound in english words (imerge, indoor, ill)",
+            "tip": "similar to an `i` sound in english words (immerge, indoor, ill)",
             "file": "/audio/sounds/em.mp3"
         },
         {
             "sound": "ən",
-            "tip": "similar to an `i` sound in english words (imerge, indoor, ill)",
+            "tip": "similar to an `i` sound in english words (immerge, indoor, ill)",
             "file": "/audio/sounds/en.mp3"
         },
         {
             "sound": "ǧ",
-            "tip": "",
+            "tip": "similar to english, but pronounced further back in the throat",
             "file": "/audio/sounds/g_backsign.mp3"
         },
         {
             "sound": "g",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/g.mp3"
         },
         {
             "sound": "ǧv",
-            "tip": "",
+            "tip": "similar to english, but pronounced further back in the throat and with a rounded mouth",
             "file": "/audio/sounds/gv_backsign.mp3"
         },
         {
             "sound": "gv",
-            "tip": "",
+            "tip": "similar to english, but with a rounded mouth",
             "file": "/audio/sounds/gv.mp3"
         },
         {
             "sound": "h",
-            "tip": "",
+            "tip": "similar to english, more like a `ha`",
             "file": "/audio/sounds/h.mp3"
         },
         {
             "sound": "i",
-            "tip": "",
+            "tip": "similar to an `ee` sound in english",
             "file": "/audio/sounds/i.mp3"
         },
         {
             "sound": "k",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/k.mp3"
         },
         {
             "sound": "k̓",
-            "tip": "",
+            "tip": "similar to english, but shorter",
             "file": "/audio/sounds/kstop.mp3"
         },
         {
             "sound": "k̓v",
-            "tip": "",
+            "tip": "similar to english, but shorter and with a rounded mouth",
             "file": "/audio/sounds/kstopv.mp3"
         },
         {
             "sound": "kv",
-            "tip": "",
+            "tip": "similar to english, but with a rounded mouth",
             "file": "/audio/sounds/kv.mp3"
         },
         {
             "sound": "l",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/l.mp3"
         },
         {
             "sound": "lh",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/lh.mp3"
         },
         {
             "sound": "l̓",
-            "tip": "",
+            "tip": "similar to english, but with a glottal catch",
             "file": "/audio/sounds/lstop.mp3"
         },
         {
             "sound": "m",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/m.mp3"
         },
         {
             "sound": "m̓",
-            "tip": "",
+            "tip": "similar to english, but shorter",
             "file": "/audio/sounds/mstop.mp3"
         },
         {
             "sound": "n",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/n.mp3"
         },
         {
             "sound": "n̓",
-            "tip": "",
+            "tip": "similar to english, but shorter",
             "file": "/audio/sounds/nstop.mp3"
         },
         {
             "sound": "p",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/p.mp3"
         },
         {
             "sound": "p̓",
-            "tip": "",
+            "tip": "similar to english, but shorter",
             "file": "/audio/sounds/pstop.mp3"
         },
         {
             "sound": "q",
-            "tip": "",
+            "tip": "similar to `kha` in english",
             "file": "/audio/sounds/q.mp3"
         },
         {
             "sound": "q̓",
-            "tip": "",
+            "tip": "similar to `kha` in english, but shorter",
             "file": "/audio/sounds/qstop.mp3"
         },
         {
             "sound": "q̓v",
-            "tip": "",
+            "tip": "similar to a `kh` sound but with a rounded mouth and shorter",
             "file": "/audio/sounds/qstopv.mp3"
         },
         {
             "sound": "qv",
-            "tip": "",
+            "tip": "similar to a `kh` sound but with a rounded mouth",
             "file": "/audio/sounds/qv.mp3"
         },
         {
             "sound": "s",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/s.mp3"
         },
         {
             "sound": "t",
-            "tip": "",
+            "tip": "similar to english",
             "file": "/audio/sounds/t.mp3"
         },
         {
             "sound": "th",
-            "tip": "",
+            "tip": "similar to a `kl` sound in english",
             "file": "/audio/sounds/th.mp3"
         },
         {
             "sound": "t̓",
-            "tip": "",
+            "tip": "similar to english, but shorter",
             "file": "/audio/sounds/tstop.mp3"
         },
         {
             "sound": "t̓h",
-            "tip": "",
+            "tip": "similar to a `kl` sound in english but with a glottal catch",
             "file": "/audio/sounds/tstoph.mp3"
         },
         {
             "sound": "u",
-            "tip": "",
+            "tip": "similar to `oo` in english",
             "file": "/audio/sounds/u.mp3"
         },
         {
             "sound": "w",
-            "tip": "",
+            "tip": "similar to `wa` in english",
             "file": "/audio/sounds/w.mp3"
         },
         {
             "sound": "w̓",
-            "tip": "",
+            "tip": "similar to `wa` in english but with a glottal catch",
             "file": "/audio/sounds/wstop.mp3"
         },
         {
             "sound": "x̌",
-            "tip": "",
+            "tip": "similar to `ha` in english, but pronounced further back in the mouth",
             "file": "/audio/sounds/x_backsign.mp3"
         },
         {
             "sound": "x",
-            "tip": "",
+            "tip": "similar to `ha` in english",
             "file": "/audio/sounds/x.mp3"
         },
         {
             "sound": "x̌v",
-            "tip": "",
+            "tip": "similar to `hwah` in english, but pronounced further back in the mouth",
             "file": "/audio/sounds/xv_backsign.mp3"
         },
         {
             "sound": "xv",
-            "tip": "",
+            "tip": "similar to `hwa` in english, but with the back of the tongue against the roof of your mouth",
             "file": "/audio/sounds/xv.mp3"
         },
         {
             "sound": "y",
-            "tip": "",
+            "tip": "similar to the `y` sound in `you` in english",
             "file": "/audio/sounds/y.mp3"
         },
         {
             "sound": "y̓",
-            "tip": "",
+            "tip": "similar to `y` sounds in english, but with a glottal catch",
             "file": "/audio/sounds/ystop.mp3"
         },
         {
             "sound": "z",
-            "tip": "",
+            "tip": "a mix between `ch` `j` and `z` sounds in english",
             "file": "/audio/sounds/z.mp3"
         }
     ]
