@@ -28,7 +28,7 @@ function Word ({ word, isListView }) {
 // propTypes based on eslint recommendation and GPT-Assisted code
 Word.propTypes = {
     word: PropTypes.shape({
-        sounds: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+        sounds: PropTypes.arrayOf(PropTypes.string).isRequired,
         meaning: PropTypes.string.isRequired,
         file: PropTypes.string.isRequired,
     }).isRequired,
