@@ -1,5 +1,6 @@
 import { PropTypes } from "prop-types";
 import wordsJSON from '../words.json'
+import './Word.css'
 
 function Word ({ word, isListView }) {
     const { sounds, meaning, file } = word; 
@@ -18,7 +19,7 @@ function Word ({ word, isListView }) {
         <audio controls>
           <source src={file} type="audio/mpeg" />
         </audio>
-        <h3>Word: {sounds.map((sound, index) => <span key={index} title={getSoundTip(sound)}>{sound}</span>)}</h3>
+        <h3>Word: {sounds.map((sound, index) => <span key={index} className="word-part" title={getSoundTip(sound)}>{sound}</span>)}</h3>
         <p>Meaning: {meaning}</p>
       </div>
     );

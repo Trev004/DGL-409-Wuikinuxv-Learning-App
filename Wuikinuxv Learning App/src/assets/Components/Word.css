@@ -1,0 +1,34 @@
+/*  GPT-Assisted CSS
+    with edits to match styling
+*/
+.word-part {
+    position: relative;
+}
+
+.word-part::before {
+  content: attr(title);
+  display: none;
+  position: absolute;
+  top: -4em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #333;
+  width: 25em;
+}
+
+.word-part:hover::before {
+  display: block;
+}
+
+@media (prefers-color-scheme: light) {
+    .word-part::before {
+        border: 1px solid #1D3040;
+        background-color: #fff;
+        color: #213547;
+    }
+}
