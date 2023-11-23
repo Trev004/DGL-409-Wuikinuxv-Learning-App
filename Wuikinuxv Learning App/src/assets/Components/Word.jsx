@@ -1,4 +1,5 @@
 import { PropTypes } from "prop-types";
+
 function Word ({ word, isListView }) {
     const { sounds, meaning, file } = word; 
     // propTypes based on eslint recommendation and GPT-Assisted code
