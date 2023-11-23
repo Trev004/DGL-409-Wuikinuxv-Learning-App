@@ -43,7 +43,7 @@
             "sounds": ["s", "a", "s", " ", "’", "ǎ", "ì", "x", "s", "t̓", "a", "kv", "a", "’", "a"]
         }
     ],
-    "sounds": [
+    "baseSounds": [
         {
             "sound": "a",
             "tip": "similar to english `ah`",
