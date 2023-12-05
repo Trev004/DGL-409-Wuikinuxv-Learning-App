@@ -10,9 +10,17 @@
 .basics-intro img{
     padding-right: 3em;
 }
+.word-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 0.15em dashed #95000050
+}
 .word-section h3{
     font-weight: 300;
 }
 .unique{
     padding-left: 0.5em;
+    font-size: 1.5em;
 }
