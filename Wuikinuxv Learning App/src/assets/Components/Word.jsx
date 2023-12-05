@@ -20,7 +20,7 @@ function Word ({ word, isListView }) {
           <source src={file} type="audio/mpeg" />
         </audio>
         <h3>Word: {sounds.map((sound, index) => <span key={index} className="word-part" title={getSoundTip(sound)}>{sound}</span>)}</h3>
-        <p>Meaning: {meaning}</p>
+        <p><i>Meaning:</i> {meaning}</p>
       </div>
     );
 }

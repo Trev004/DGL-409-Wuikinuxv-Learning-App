@@ -20,8 +20,6 @@ function App() {
   }, [isListView]);
   
   const currentContainerView =  `${isListView ? 'wordarea-list' : 'wordarea-card'}`;
-  const currentWordView = `${isListView ? 'word-list' : 'word-card'}`;
-
   return (
     <>
       <div style={{ marginTop: '3em' }}>
@@ -32,17 +30,6 @@ function App() {
         <p>Below, you can see a list of ’Uik̓ala words, paired with their english translations and an audio file for you to listen to.</p>
       </div>
       <button onClick={viewChanger}>{isListView ? 'Toggle to Card View' : 'Toggle to List View'}</button>
-      <div className={currentContainerView}>
-        {words.map((word, index) => (
-          <div key={index} className={currentWordView}>
-            <audio controls>
-              <source src={word.file} type="audio/mpeg" />
-            </audio>
-            <h3>Word: {word.word}</h3>
-            <p>Meaning: {word.meaning}</p>
-          </div>
-        ))}
-      </div>
       <div className={currentContainerView}>
       {words.map((word, index) => (
           <Word key={index} word={word} isListView={isListView}/>
