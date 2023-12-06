@@ -33,7 +33,9 @@ function Basics () {
                 </div>
                 <div className="word-soundlist">
                     <h2>Sound List</h2>
-                    <p>Below you&apos;ll find a list of sounds in the language</p>
+                    <p>Below you&apos;ll find a list of sounds in the language along with tips for pronouncing them.
+                        <br /> If an example is available, you&apos;ll also see an example word along with audio.
+                    </p>
                     {baseSounds.map((soundData, index) => (
                       <div className="word-section-sound" key={index}>
                         <div className="word-section-sound-intro">
@@ -41,10 +43,12 @@ function Basics () {
                           <p>{soundData.tip}</p>
                           <audio controls src={soundData.file}></audio>
                         </div>
-                        <div className="word-section-sound-example">
-                            <h3><i>Example:</i>TEST</h3>
-                            <audio controls src=""></audio>
-                        </div>
+                        {soundData.example && soundData.exampleFile && (
+                            <div className="word-section-sound-example">
+                                <h3><i>Example:</i> {soundData.example}</h3>
+                                <audio controls src={soundData.exampleFile}></audio>
+                            </div>
+                        )}
                       </div>
                     ))}
                 </div>

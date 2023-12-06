@@ -41,13 +41,27 @@
             "meaning": "How are you",
             "file": "/audio/howareyou.mp3",
             "sounds": ["s", "a", "s", " ", "’", "ǎ", "ì", "x", "s", "t̓", "a", "kv", "a", "’", "a"]
+        },
+        {
+            "word": "a’aìnix",
+            "meaning": "Eyebrows",
+            "file": "/audio/eyebrows.mp3",
+            "sounds": ["a", "’", "a", "ì", "n", "i", "x"]
+        },
+        {
+            "word": "a̓m̓i",
+            "meaning": "Small",
+            "file": "/audio/small.mp3",
+            "sounds": ["a̓", "m̓", "i"]
         }
     ],
     "baseSounds": [
         {
             "sound": "a",
             "tip": "similar to english `ah`",
-            "file": "/audio/sounds/a.mp3"
+            "file": "/audio/sounds/a.mp3",
+            "example": "a’aìnix",
+            "exampleFile": "/audio/eyebrows.mp3"
         },
         {
             "sound": "à",
@@ -57,7 +71,9 @@
         {
             "sound": "a̓",
             "tip": "similar to english, but shorter than the other 'a' sounds",
-            "file": "/audio/sounds/astop.mp3"
+            "file": "/audio/sounds/astop.mp3",
+            "example": "a̓m̓i",
+            "exampleFile": "/audio/small.mp3"
         },
         {
             "sound": "ǎ",
