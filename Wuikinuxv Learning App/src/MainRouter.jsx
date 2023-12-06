@@ -3,16 +3,23 @@ import Flashcard from './assets/Pages/Flashcard'
 import Basics from './assets/Pages/Basics'
 import './MainRouter.css'
 import { NavLink, Outlet, Route, Routes } from 'react-router-dom'
+import { useState } from 'react'
 function MainRouter() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
     <>
       <header>
           <nav>
             <h1>Wuikinuxv Language App</h1>
-            <ul>
-              <li><NavLink to="/">Basics</NavLink></li>
-              <li><NavLink to="/wordlist">Word List</NavLink></li>
-              <li><NavLink to={"/flashcards"}>Flashcards</NavLink></li>
+            <button className={`menu-btn ${menuOpen ? 'menu-btn-active' : ''}`} onClick={toggleMenu}>&#9776;</button>
+            <ul className={menuOpen ? 'active' : ''}>
+              <li onClick={() => setMenuOpen(false)}><NavLink to="/">Basics</NavLink></li>
+              <li onClick={() => setMenuOpen(false)}><NavLink to="/wordlist">Word List</NavLink></li>
+              <li onClick={() => setMenuOpen(false)}><NavLink to={"/flashcards"}>Flashcards</NavLink></li>
             </ul>
           </nav>
       </header>

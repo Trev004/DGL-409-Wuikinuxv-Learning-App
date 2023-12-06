@@ -47,6 +47,43 @@ li a.active{
   border-width: 0.35em;
   border-style: solid;
 }
+.menu-btn{
+  display: none;
+}
+
+/* 
+Modified from GPT-Assisted code
+*/
+@media screen and (max-width: 768px) {
+    .menu-btn {
+      display: inline-block;
+      margin: 10px;
+  }
+  .menu-btn-active{
+    color: #72E9E5;
+    border: #72E9E5;
+    border-width: 0.35em;
+    border-style: solid;
+  }
+
+  ul {
+      display: none;
+      flex-direction: column;
+      background-color: #950000;
+      position: absolute;
+      top: 50px; 
+      width: 100%;
+      z-index: 2;
+  }
+
+  ul.active {
+      display: flex;
+  }
+  li{
+    margin: 15px;
+  }
+}
+
 @media (prefers-color-scheme: light) {
     header{
         color: #e0e0e0;
