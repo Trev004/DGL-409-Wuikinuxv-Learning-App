@@ -20,6 +20,16 @@
 .word-section h3{
     font-weight: 300;
 }
+.word-section-sound{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 2em;
+    border-bottom: 0.15em dashed #95000050
+}
+.word-section-sound-intro p::first-letter{
+    text-transform: uppercase;
+}
 .unique{
     padding-left: 0.5em;
     font-size: 1.5em;
