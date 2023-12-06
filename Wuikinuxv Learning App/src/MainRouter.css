@@ -101,4 +101,12 @@ Modified from GPT-Assisted code
       border-width: 0.35em;
       border-style: solid;
     }
+    @media screen and (max-width: 768px) {
+      .menu-btn-active{
+        color: #213547;
+        border: #1D3040;
+        border-width: 0.35em;
+        border-style: solid;
+      }
+    }
 }
