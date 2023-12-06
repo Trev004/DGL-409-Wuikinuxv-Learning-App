@@ -27,7 +27,8 @@ function App() {
           <img src="Thumbnail_Uikala_LOGO.png" alt="Wuikinuxv nation logo"/>
           <h2>Word List</h2>
         </div>
-        <p>Below, you can see a list of ’Uik̓ala words, paired with their english translations and an audio file for you to listen to.</p>
+        <p className='intro-text'>Below, you can see a list of ’Uik̓ala words, paired with their english translations and an audio file for you to listen to.</p>
+        <p className='intro-text'>Hover over &#40;or tap on mobile&#41; parts of the word to see a tip for pronunciation</p>
       </div>
       <button onClick={viewChanger}>{isListView ? 'Toggle to Card View' : 'Toggle to List View'}</button>
       <div className={currentContainerView}>

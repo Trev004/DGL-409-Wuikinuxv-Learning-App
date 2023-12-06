@@ -55,6 +55,7 @@ Responsive styles modified from GPT-Assisted code
       gap: 0;
       grid-auto-rows: 3em;
       border-bottom: 0.15em dashed #950000;
+      margin: 30px 0 30px 0;
   }
   .intro {
       flex-direction: column;
@@ -63,8 +64,11 @@ Responsive styles modified from GPT-Assisted code
   .intro h2 {
       margin-right: 0;
   }
+  .intro-text{
+    text-align: left;
+  }
   .word-card {
-      margin: 0.5em;
+      margin: 0.5em auto;
   }
   .word-list{
     font-size: 20px;
