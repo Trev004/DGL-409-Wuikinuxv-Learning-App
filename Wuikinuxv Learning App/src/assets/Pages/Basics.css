@@ -25,7 +25,7 @@
     grid-template-columns: 2fr 1fr;
     align-items: center;
     gap: 2em;
-    border-bottom: 0.15em dashed #95000050
+    border-bottom: 0.15em dashed #95000050;
 }
 .word-section-sound-intro p::first-letter{
     text-transform: uppercase;
@@ -33,4 +33,25 @@
 .unique{
     padding-left: 0.5em;
     font-size: 1.5em;
+}
+
+/* Responsive Styles 
+Modified based on GPT-assisted code
+*/
+@media screen and (max-width: 768px) {
+    .basics-intro {
+        margin-top: 2em;
+        flex-direction: column;
+    }
+
+    .basics-intro img {
+        padding-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .word-section,
+    .word-section-sound {
+        grid-template-columns: 1fr;
+        border-bottom: 0.15em dashed #950000;
+    }
 }

@@ -15,11 +15,11 @@ function Basics () {
                     <p>You&apos;ll want to be familiar with some symbols that may appear on or around words, you may have an easier time if you listen carefully to the audio.</p>
                     <h2>Basic Concepts</h2>
                     <div className="word-section">
-                        <h3>a̓ or ’</h3>
+                        <h3>a̓ or ’ &#40;Glottal Catch&#41;</h3>
                         <p>The symbol a̓ or ’ appears on top of a letter or beside a letter. When it is on top of a letter it indicates a glottal catch or stoppage of breath as you pronounce the sound. If it appears beside a letter it indicates a short pause in the word.</p>
                     </div>
                     <div className="word-section">
-                        <h3 className='unique'> ̌  </h3>
+                        <h3 className='unique'> ̌  &#40;Backsign&#41;</h3>
                         <p>If the symbol &nbsp; ̌  appears on top of a letter it&apos;s called a back sign and indicates that the sound is pronounced further back in throat.</p>
                     </div>
                     <div className="word-section">
