@@ -8,25 +8,25 @@
     color: #72E9E5;
 }
 .word-part::before {
-  content: attr(title);
-  display: none;
-  position: absolute;
-  top: -4em;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  padding: 4px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 0.8em;
-  color: #333;
-  width: 25em;
+    content: attr(title);
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.8em;
+    color: #333;
+    width: 300px;
+    z-index: 2;
 }
-
-.word-part:hover:not([title='']):before {
-  display: block;
+@media screen and (max-width: 768px) {
+    .word-part:hover:not([title='']):before {
+      display: block;
+      margin: 0 auto;
+      transform: translateY(-130px);
+    }
 }
-
 @media (prefers-color-scheme: light) {
     .word-part::before {
         border: 1px solid #1D3040;
