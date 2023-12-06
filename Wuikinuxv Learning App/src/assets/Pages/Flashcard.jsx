@@ -70,26 +70,28 @@ function Flashcard () {
       }
     return(
         <>
-            <h2 className='flashcard-intro'>Flashcards</h2>
-            <p>Click on the correct meaning of the word displayed</p>
-            <h2>Word: {words[randomWord].word}</h2>
-            <audio ref={audioSrcRef} controls>
-              <source src={audioSrc} type="audio/mpeg" />
-            </audio>
-            <div className="flashcard-meanings">
-                {wrongWords.map((meaning, index) => (
-                    <button
-                        key={index}
-                        onClick={() => answerHandler(meaning, index)}
-                        className={`flashcard-response ${userSelections[index] || ''} ${userCorrect ? 'flashcard-unclickable': ''}`}
-                        >{meaning}</button>
-                ))}
+            <div className="flashcard">
+                <h2 className='flashcard-intro'>Flashcards</h2>
+                <p>Click on the correct meaning of the word displayed</p>
+                <h2>Word: {words[randomWord].word}</h2>
+                <audio ref={audioSrcRef} controls>
+                  <source src={audioSrc} type="audio/mpeg" />
+                </audio>
+                <div className="flashcard-meanings">
+                    {wrongWords.map((meaning, index) => (
+                        <button
+                            key={index}
+                            onClick={() => answerHandler(meaning, index)}
+                            className={`flashcard-response ${userSelections[index] || ''} ${userCorrect ? 'flashcard-unclickable': ''}`}
+                            >{meaning}</button>
+                    ))}
+                </div>
+                {userCorrect === true && 
+                <><p>Correct!</p>
+                <button onClick={() => {newRandomWord(oldRandom)}}>Continue</button></>
+                }
+                {userCorrect === false && <p>Incorrect. Try again.</p>}
             </div>
-            {userCorrect === true && 
-            <><p>Correct!</p>
-            <button onClick={() => {newRandomWord(oldRandom)}}>Continue</button></>
-            }
-            {userCorrect === false && <p>Incorrect. Try again.</p>}
         </>
     );
 }

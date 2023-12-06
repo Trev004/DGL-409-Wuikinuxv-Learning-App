@@ -8,7 +8,9 @@
     padding-top: 1em;
 }
 .flashcard-response{
+    width: 100%;
     padding: 2em 4em 2em 4em;
+    box-sizing: border-box;
 }
 .flashcard-correct{
     background-color: #72E9E5;
@@ -20,7 +22,13 @@
 .flashcard-unclickable{
     pointer-events: none;
 }
-
+@media screen and (max-width: 768px) {
+    .flashcard-response {
+        padding: 40px 10px 40px 10px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
 @media (prefers-color-scheme: dark) {
     .flashcard-correct{
         color: #1D3040;
