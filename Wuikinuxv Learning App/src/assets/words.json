@@ -58,217 +58,217 @@
             "word": "bùkv",
             "meaning": "Book",
             "file": "/audio/book.mp3",
-            "sounds": [""]
+            "sounds": ["b", "ù", "kv"]
         },
         {
             "word": "cə̀nqa",
             "meaning": "To Fry",
             "file": "/audio/tofry.mp3",
-            "sounds": [""]
+            "sounds": ["c", "ə̀n", "q", "a"]
         },
         {
             "word": "c̓ə̀m",
             "meaning": "Index Finger",
             "file": "/audio/indexfinger.mp3",
-            "sounds": [""]
+            "sounds": ["c̓", "ə̀m"]
         },
         {
             "word": "də̀mxs",
             "meaning": "Salt",
             "file": "/audio/salt.mp3",
-            "sounds": [""]
+            "sounds": ["d", "ə̀m", "x", "s"]
         },
         {
             "word": "dhà’ǎus",
             "meaning": "Tree",
             "file": "/audio/tree.mp3",
-            "sounds": [""]
+            "sounds": ["dh", "à", "’", "ǎ", "u", "s"]
         },
         {
             "word": "ǧə̀nəm",
             "meaning": "Woman",
             "file": "/audio/woman.mp3",
-            "sounds": [""]
+            "sounds": ["ǧ", "ə̀n", "əm"]
         },
         {
             "word": "gìgik",
             "meaning": "Teeth",
             "file": "/audio/teeth.mp3",
-            "sounds": [""]
+            "sounds": ["g", "ì", "g", "i", "k"]
         },
         {
             "word": "ǧvuw̓i",
             "meaning": "Raven",
             "file": "/audio/raven.mp3",
-            "sounds": [""]
+            "sounds": ["ǧv", "u", "w̓", "i"]
         },
         {
             "word": "gviùkv",
             "meaning": "Heavy",
             "file": "/audio/heavy.mp3",
-            "sounds": [""]
+            "sounds": ["gv", "i", "ù", "kv"]
         },
         {
             "word": "kàc̓ən̓aq",
             "meaning": "Spoon",
             "file": "/audio/spoon.mp3",
-            "sounds": [""]
+            "sounds": ["k", "à", "c̓", "ən̓", "a", "q"]
         },
         {
             "word": "k̓ìt̓əm",
             "meaning": "Grass",
             "file": "/audio/grass.mp3",
-            "sounds": [""]
+            "sounds": ["k̓", "ì", "t̓", "əm"]
         },
         {
             "word": "k̓vik̓vasiza",
             "meaning": "Moccassins",
             "file": "/audio/moccassins.mp3",
-            "sounds": [""]
+            "sounds": ["k̓v", "i", "k̓v", "a", "s", "i", "z", "a"]
         },
         {
             "word": "kvə̀lilhəm",
             "meaning": "To Lie Down",
             "file": "/audio/toliedown.mp3",
-            "sounds": [""]
+            "sounds": ["kv", "ə̀l", "i", "lh", "əm"]
         },
         {
             "word": "la'a",
             "meaning": "Yes",
             "file": "/audio/yes.mp3",
-            "sounds": [""]
+            "sounds": ["l", "a", "'", "a"]
         },
         {
             "word": "lhàw̓ənəm̓",
             "meaning": "Husband",
             "file": "/audio/husband.mp3",
-            "sounds": [""]
+            "sounds": ["lh", "à", "w̓", "ən", "əm̓"]
         },
         {
             "word": "l̓x̌vuà",
             "meaning": "To Cough",
             "file": "/audio/tocough.mp3",
-            "sounds": [""]
+            "sounds": ["l̓", "x̌v", "u", "à"]
         },
         {
             "word": "mìa",
             "meaning": "Any Fish",
             "file": "/audio/anyfish.mp3",
-            "sounds": [""]
+            "sounds": ["m", "ì", "a"]
         },
         {
             "word": "n̓nà",
             "meaning": "To Sling",
             "file": "/audio/tosling.mp3",
-            "sounds": [""]
+            "sounds": ["n̓", "n", "à"]
         },
         {
             "word": "pàpa",
             "meaning": "Black Pepper",
             "file": "/audio/pepper.mp3",
-            "sounds": [""]
+            "sounds": ["p", "à", "p", "a"]
         },
         {
             "word": "p̓sp̓iy̓ù",
             "meaning": "Ear",
             "file": "/audio/ear.mp3",
-            "sounds": [""]
+            "sounds": ["p̓", "s", "p̓", "i", "y̓", "ù"]
         },
         {
             "word": "qàm̓ila",
             "meaning": "Deer",
             "file": "/audio/deer.mp3",
-            "sounds": [""]
+            "sounds": ["q", "à", "m̓", "i", "l", "a"]
         },
         {
             "word": "q̓àq̓ut̓ha'ailas",
             "meaning": "School",
             "file": "/audio/school.mp3",
-            "sounds": [""]
+            "sounds": ["q̓", "à", "q̓", "u", "t̓h", "a", "'", "a", "i", "l", "a", "s"]
         },
         {
             "word": "q̓vàq̓vax̌v’ǎimas",
             "meaning": "Vegetable",
             "file": "/audio/vegetable.mp3",
-            "sounds": [""]
+            "sounds": ["q̓v", "à", "q̓v", "a", "x̌v", "’", "ǎ", "i", "m", "a", "s"]
         },
         {
             "word": "qvə̀la",
             "meaning": "Alive",
             "file": "/audio/alive.mp3",
-            "sounds": [""]
+            "sounds": ["qv", "ə̀l", "a"]
         },
         {
             "word": "tsà",
             "meaning": "To Push With Hand",
             "file": "/audio/pushhand.mp3",
-            "sounds": [""]
+            "sounds": ["t", "s", "à"]
         },
         {
             "word": "thsà",
             "meaning": "Slippery",
             "file": "/audio/slippery.mp3",
-            "sounds": [""]
+            "sounds": ["th", "s", "à"]
         },
         {
             "word": "t̓ə̀nikv",
             "meaning": "Cold",
             "file": "/audio/cold.mp3",
-            "sounds": [""]
+            "sounds": ["t̓", "ə̀n", "i", "kv"]
         },
         {
             "word": "t̓hgìs",
             "meaning": "Heart",
             "file": "/audio/heart.mp3",
-            "sounds": [""]
+            "sounds": ["t̓h", "g", "ì", "s"]
         },
         {
             "word": "wiìkv",
             "meaning": "Eagle",
             "file": "/audio/eagle.mp3",
-            "sounds": [""]
+            "sounds": ["w", "i", "ì", "kv"]
         },
         {
             "word": "w̓a’aə̀m",
             "meaning": "Water",
             "file": "/audio/water.mp3",
-            "sounds": [""]
+            "sounds": ["w̓","a", "’", "a", "ə̀m"]
         },
         {
             "word": "x̌t̓ə̀m",
             "meaning": "Carrot",
             "file": "/audio/carrot.mp3",
-            "sounds": [""]
+            "sounds": ["x̌", "t̓", "ə̀m"]
         },
         {
             "word": "xàta",
             "meaning": "Peek",
             "file": "/audio/peek.mp3",
-            "sounds": [""]
+            "sounds": ["x", "à", "t", "a"]
         },
         {
             "word": "x̌və̀nukv",
             "meaning": "(Your) Child",
             "file": "/audio/ownchild.mp3",
-            "sounds": [""]
+            "sounds": ["x̌v", "ə̀n", "u", "kv"]
         },
         {
             "word": "xvə̀ltəla",
             "meaning": "Fire",
             "file": "/audio/fire.mp3",
-            "sounds": [""]
+            "sounds": ["xv", "ə̀l", "t", "əl", "a"]
         },
         {
             "word": "y̓ìta",
             "meaning": "Row",
             "file": "/audio/row.mp3",
-            "sounds": [""]
+            "sounds": ["y̓", "ì", "t", "a"]
         },
         {
             "word": "zìgəns",
             "meaning": "Chicken",
             "file": "/audio/chicken.mp3",
-            "sounds": [""]
+            "sounds": ["z", "ì", "g", "ən", "s"]
         }
     ],
     "baseSounds": [
@@ -384,16 +384,12 @@
         {
             "sound": "i",
             "tip": "similar to an `ee` sound in english",
-            "file": "/audio/sounds/i.mp3",
-            "example": "",
-            "exampleFile": "/audio/.mp3"
+            "file": "/audio/sounds/i.mp3"
         },
         {
             "sound": "ì",
             "tip": "similar to an `ee` sound in english, but with more emphasis",
-            "file": "/audio/sounds/i.mp3",
-            "example": "",
-            "exampleFile": "/audio/.mp3"
+            "file": "/audio/sounds/i.mp3"
         },
         {
             "sound": "k",
@@ -517,9 +513,7 @@
         {
             "sound": "s",
             "tip": "similar to english",
-            "file": "/audio/sounds/s.mp3",
-            "example": "",
-            "exampleFile": "/audio/.mp3"
+            "file": "/audio/sounds/s.mp3"
         },
         {
             "sound": "t",
