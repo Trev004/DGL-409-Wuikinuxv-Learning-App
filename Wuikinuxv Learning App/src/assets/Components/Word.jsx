@@ -16,11 +16,11 @@ function Word ({ word, isListView }) {
       
     return (
       <div className={isListView ? 'word-list' : 'word-card'}>
+        <h3>Word: {sounds.map((sound, index) => <span key={index} className="word-part" title={getSoundTip(sound)}>{sound}</span>)}</h3>
+        <p><i>Meaning:</i> {meaning}</p>
         <audio controls>
           <source src={file} type="audio/mpeg" />
         </audio>
-        <h3>Word: {sounds.map((sound, index) => <span key={index} className="word-part" title={getSoundTip(sound)}>{sound}</span>)}</h3>
-        <p><i>Meaning:</i> {meaning}</p>
       </div>
     );
 }

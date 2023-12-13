@@ -56,6 +56,6 @@ Modified based on GPT-assisted code
     .word-section-sound {
         grid-template-columns: 1fr;
         border-bottom: 0.15em dashed #950000;
-        padding: 10px 0 10px 0;
+        padding: 10px 0 20px 0;
     }
 }

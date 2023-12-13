@@ -6,7 +6,7 @@
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em;
+  padding: 0 1em 1em 1em;
 }
 .word-list {
   display: grid;
@@ -53,7 +53,7 @@ Responsive styles modified from GPT-Assisted code
       gap: 0;
       grid-auto-rows: 3em;
       border-bottom: 0.15em dashed #950000;
-      margin: 30px 0 30px 0;
+      padding-bottom: 30px;
   }
   .intro {
       flex-direction: column;
