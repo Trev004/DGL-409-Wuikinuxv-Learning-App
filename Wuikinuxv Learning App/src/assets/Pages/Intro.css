@@ -1,36 +1,52 @@
+/* GPT-Assisted code, edited to better fit my needs on this site */
+body {
+    margin: 0;
+    overflow: hidden;
+}
 .hero-container {
     position: relative;
     width: 100%;
     height: 100vh;
-  }
-  
-  .hero-image {
-    width: 100%;
+    overflow: hidden;
+}
+.hero-image {
+    width: 100vw;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .text-container {
+}
+.text-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #E0E0E0cc;
     padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
     max-width: 80%;
-  }
-  
-  .text-container p {
-    margin: 0;
-    color: #000;
-  }
-  
-  @media (max-width: 768px) {
-    .text-container {
-      max-width: 90%;
-      padding: 15px;
+}
+.text-container p {
+    color: #213547;
+    text-align: left;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+    .text-container{
+        background-color: #333333cc;
     }
-  }
+    .text-container p{
+        color: #E0E0E0
+    }
+
+}
+@media (max-width: 768px) {
+    .text-container {
+        max-width: 90%;
+        padding: 15px;
+        position: static;
+        transform: translate(0, -120%);
+        margin: 0 auto;
+    }
+}
   
