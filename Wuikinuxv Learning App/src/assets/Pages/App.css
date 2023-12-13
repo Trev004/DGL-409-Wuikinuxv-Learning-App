@@ -46,7 +46,7 @@ Responsive styles modified from GPT-Assisted code
 */
 @media screen and (max-width: 768px) {
   .wordarea-list{
-    border-top: 0.15em dashed #950000;;
+      border-top: 0.15em dashed #950000;;
   }
   .word-list {
       grid-template-columns: repeat(1, 1fr);
@@ -63,18 +63,18 @@ Responsive styles modified from GPT-Assisted code
       margin-right: 0;
   }
   .intro-text{
-    text-align: left;
+      text-align: left;
   }
   .word-card {
       margin: 0.5em auto;
   }
   .word-list{
-    font-size: 20px;
+      font-size: 20px;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .word-card{
-    border: 0.2em solid #333333;
+      border: 0.2em solid #333333;
   }
 }
