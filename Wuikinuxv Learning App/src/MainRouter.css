@@ -55,9 +55,9 @@ li a.active{
 Modified from GPT-Assisted code
 */
 @media screen and (max-width: 768px) {
-    .menu-btn {
-      display: inline-block;
-      margin: 10px;
+  .menu-btn {
+    display: inline-block;
+    margin: 10px;
   }
   .menu-btn-active{
     color: #72E9E5;
@@ -65,22 +65,30 @@ Modified from GPT-Assisted code
     border-width: 0.35em;
     border-style: solid;
   }
+  .menu-link{
+    width: 95%;
+    display: flex;
+  }
 
   ul {
-      display: none;
-      flex-direction: column;
-      background-color: #950000;
-      position: absolute;
-      top: 50px; 
-      width: 100%;
-      z-index: 2;
+    display: none;
+    flex-direction: column;
+    background-color: #950000;
+    padding: 0;
+    position: absolute;
+    top: 50px; 
+    width: 100%;
+    z-index: 2;
   }
 
   ul.active {
-      display: flex;
+    display: flex;
   }
   li{
     margin: 15px;
+  }
+  ul li a{
+    width: 100%;
   }
 }
 

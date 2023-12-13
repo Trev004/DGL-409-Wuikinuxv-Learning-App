@@ -18,9 +18,9 @@ function MainRouter() {
             <h1>Wuikinuxv Language App</h1>
             <button className={`menu-btn ${menuOpen ? 'menu-btn-active' : ''}`} onClick={toggleMenu}>&#9776;</button>
             <ul className={menuOpen ? 'active' : ''}>
-              <li onClick={() => setMenuOpen(false)}><NavLink to="/basics">Basics</NavLink></li>
-              <li onClick={() => setMenuOpen(false)}><NavLink to="/wordlist">Word List</NavLink></li>
-              <li onClick={() => setMenuOpen(false)}><NavLink to={"/flashcards"}>Flashcards</NavLink></li>
+              <li onClick={() => setMenuOpen(false)} className='menu-link'><NavLink to="/basics">Basics</NavLink></li>
+              <li onClick={() => setMenuOpen(false)} className='menu-link'><NavLink to="/wordlist">Word List</NavLink></li>
+              <li onClick={() => setMenuOpen(false)} className='menu-link'><NavLink to={"/flashcards"}>Flashcards</NavLink></li>
             </ul>
           </nav>
       </header>
