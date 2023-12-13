@@ -19,7 +19,7 @@ function Basics () {
                         <p>The symbol a̓ or ’ appears on top of a letter or beside a letter. When it is on top of a letter it indicates a glottal catch or stoppage of breath as you pronounce the sound. If it appears beside a letter it indicates a short pause in the word.</p>
                     </div>
                     <div className="word-section">
-                        <h3 className='unique'> ̌  &#40;Backsign&#41;</h3>
+                        <h3><span className='unique'> ̌  </span>&#40;Backsign&#41;</h3>
                         <p>If the symbol &nbsp; ̌  appears on top of a letter it&apos;s called a back sign and indicates that the sound is pronounced further back in throat.</p>
                     </div>
                     <div className="word-section">

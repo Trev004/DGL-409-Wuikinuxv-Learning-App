@@ -25,9 +25,10 @@
 .word-section-sound{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    align-items: center;
+    align-items: end;
     gap: 2em;
     border-bottom: 0.15em dashed #95000050;
+    padding-bottom: 10px;
 }
 .word-section-sound-intro p::first-letter{
     text-transform: uppercase;
