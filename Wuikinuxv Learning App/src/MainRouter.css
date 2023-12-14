@@ -50,6 +50,9 @@ li a.active{
 .menu-btn{
   display: none;
 }
+.menu-logotype{
+  color: #e0e0e0;
+}
 
 /* 
 Modified from GPT-Assisted code
