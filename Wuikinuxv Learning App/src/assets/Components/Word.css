@@ -18,6 +18,7 @@
     font-size: 0.8em;
     color: #333;
     width: 300px;
+    z-index: 1;
 }
 .word-part-active:not([title='']):before{
     display: block;
