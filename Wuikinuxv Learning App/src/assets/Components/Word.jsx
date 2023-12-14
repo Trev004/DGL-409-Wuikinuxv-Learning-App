@@ -17,7 +17,7 @@ function Word ({ word, isListView }) {
     };
 
     const handleSpanClick = (index) => {
-      setActiveSpan(index === activeSpan ? null : index);
+      setActiveSpan(index);
     };
 
     // GPT-Assisted, This checks if the user clicked the span, displaying the title if they did
