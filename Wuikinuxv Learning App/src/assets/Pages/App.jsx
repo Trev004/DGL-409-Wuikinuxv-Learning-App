@@ -6,7 +6,11 @@ import './App.css'
 function App() {
   const words = wordlist.words;
   const userListPref = localStorage.getItem('prefersListView');//checks for the localStorage preference
-  const [isListView, setIsListView] = useState(userListPref === 'true' || userListPref === null);  
+  const [isListView, setIsListView] = useState(userListPref === 'true' || userListPref === null);
+  const [activeSpan, setActiveSpan] = useState(null);
+  const [currentWordIndex, setCurrentWordIndex] = useState(null);
+  const [displayingTip, setDisplayingTip] = useState(false);
+
   const viewChanger = () => {
     setIsListView(!isListView);
   }
@@ -19,6 +23,24 @@ function App() {
     }
   }, [isListView]);
   
+  // This is what handles the user clicking on a span for tooltip
+  // GPT-Assisted
+  const handleSpanClick = (wordIndex, spanIndex) => {
+    // This is what checks to make sure the span the user clicked on is in the same Word 
+    if (currentWordIndex !== wordIndex) {
+      setActiveSpan(null);
+      setCurrentWordIndex(wordIndex);
+    }
+    setActiveSpan(spanIndex);
+    setDisplayingTip(true);
+  };
+
+  const resetActiveSpan = () => {
+    setActiveSpan(null);
+    setCurrentWordIndex(null);
+    setDisplayingTip(false);
+  };
+
   const currentContainerView =  `${isListView ? 'wordarea-list' : 'wordarea-card'}`;
   return (
     <>
@@ -34,7 +56,7 @@ function App() {
         <button onClick={viewChanger}>{isListView ? 'Toggle to Card View' : 'Toggle to List View'}</button>
         <div className={currentContainerView}>
         {words.map((word, index) => (
-            <Word key={index} word={word} isListView={isListView}/>
+            <Word key={index} word={word} isListView={isListView} displayingTip={displayingTip} activeSpan={currentWordIndex === index ? activeSpan : null} onSpanClick={(spanIndex) => handleSpanClick(index, spanIndex)} resetActiveSpan={resetActiveSpan}/>
           ))}
         </div>
       </div>
