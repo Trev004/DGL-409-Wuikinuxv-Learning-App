@@ -20,9 +20,12 @@
     width: 300px;
     z-index: 2;
 }
+.word-part-active:not([title='']):before{
+    display: block;
+}
 @media screen and (max-width: 768px) {
-    .word-part:hover:not([title='']):before {
-      display: block;
+    .word-part-active:not([title='']):before {
+      /* display: block; */
       margin: 0 auto;
       transform: translateY(-130px);
     }
