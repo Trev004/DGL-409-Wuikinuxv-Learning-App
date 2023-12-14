@@ -4,7 +4,7 @@ header{
   left: 0;
   width: 100%;
   background-color: #950000; 
-  z-index: 1;
+  z-index: 2;
 }
 header nav{
   display: flex;
